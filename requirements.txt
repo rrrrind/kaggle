@@ -1,0 +1,10 @@
+tqdm
+numpy
+optuna
+pandas
+sklearn
+lightgbm
+matplotlib
+japanize-matplotlib
+
+jupyterlab
