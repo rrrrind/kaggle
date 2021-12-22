@@ -14,6 +14,8 @@ RUN apt purge -y nodejs npm
 WORKDIR /home
 COPY requirements.txt ${PWD}
 RUN python3.8 -m pip install -r requirements.txt
+# 多重対応分析
+RUN python3.8 -m pip install --user mca
 
 # jupyterlabの"Table of Contents"
 RUN jupyter labextension install @jupyterlab/toc
